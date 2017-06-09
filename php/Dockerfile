@@ -2,7 +2,7 @@ FROM php:fpm-alpine
 
 MAINTAINER Felix Favre <gnomus@gnomus.de>
 
-RUN apk add php-gettext \
+RUN apk add --no-cache gettext-dev \
     && docker-php-ext-install gettext
 
 
