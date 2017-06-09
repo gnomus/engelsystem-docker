@@ -7,4 +7,7 @@ RUN apk add --no-cache gettext-dev \
 
 
 EXPOSE 9000
+
+ENTRYPOINT ["docker-php-entrypoint"]
+
 CMD ["php-fpm"]
